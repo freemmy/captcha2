@@ -30,7 +30,7 @@ module.exports = function (params) {
     params.background = params.background || 'rgb(235,235,255)';
 
     params.length = params.length || 4;
-    params.type = params.type || 4;
+    params.type = (params.type === undefined)? 4 : params.type;
     params.width = params.width || 78;
     params.height = params.height || 35;
     params.font = params.font || {};
